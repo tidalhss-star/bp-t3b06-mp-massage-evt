@@ -2,125 +2,144 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>마포 BRO RUBY RED - 데이터마이닝 프로젝트 비하인드</title>
-  <meta name="description" content="마포 마사지 정찰제 아카이브가 탄생한 데이터마이닝 비화. 엘든링 히든 수치 분석에 준하는 집념으로 추적한 로컬 정찰 요율. 📞 010-6279-0862 예약 가이드.">
-  <meta name="keywords" content="마포 마사지 소개, 마포 마사지 꿀팁, 안티 가스라이팅, 엘든링 분석">
-  <link rel="canonical" href="https://t3b06-mp-massage-evt.pages.dev/about.html">
-
-  <style>
-    :root {
-      --primary: #0F0205;
-      --secondary: #310D12;
-      --accent: #E63946;
-      --bg: #050102;
-      --text: #F8EDEF;
-      --font: 'Pretendard', -apple-system, sans-serif;
-    }
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body {
-      background-color: var(--bg);
-      color: var(--text);
-      font-family: var(--font);
-      line-height: 1.8;
-      letter-spacing: -0.02em;
-    }
-    a { color: var(--accent); text-decoration: none; transition: 0.3s; }
-    a:hover { filter: brightness(1.2); }
-    .header {
-      backdrop-filter: blur(15px);
-      background: rgba(15, 2, 5, 0.85);
-      border-bottom: 1px solid rgba(230, 57, 70, 0.25);
-      position: sticky; top:0; z-index:100; padding: 15px 24px;
-    }
-    .header-inner {
-      max-width: 1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;
-    }
-    .logo { font-size:1.3rem; font-weight:900; color:var(--accent); text-shadow: 0 0 10px rgba(230, 57, 70, 0.6); }
-    .nav { display:flex; gap:20px; font-size:0.9rem; }
-    .nav a { color: rgba(248, 237, 239, 0.8); font-weight:600; }
-    .nav a:hover { color: var(--accent); }
-
-    .main { max-width: 900px; margin: 0 auto; padding: 60px 24px; }
-    .section-title { font-size: 2rem; font-weight:800; color:#fff; margin-bottom:24px; border-left: 5px solid var(--accent); padding-left:15px; }
-    .card-box {
-      background: rgba(49, 13, 18, 0.3); border: 1px solid rgba(230, 57, 70, 0.15); border-radius:16px;
-      padding: 32px; margin-bottom: 40px;
-    }
-    .card-box p { margin-bottom: 16px; font-size:1.05rem; opacity:0.9; }
-
-    .team-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 30px;
-    }
-    .team-member {
-      background: rgba(15, 2, 5, 0.6); border: 1px solid rgba(230, 57, 70, 0.08); border-radius:12px; padding:20px; text-align:center;
-    }
-    .team-member h4 { color: #fff; margin-bottom: 8px; font-size: 1.1rem; }
-    .team-member p { font-size: 0.9rem; opacity: 0.8; }
-
-    .footer {
-      background: #050102; border-top: 1px solid rgba(230, 57, 70, 0.2); padding: 48px 24px; text-align:center; font-size:0.9rem; opacity:0.85;
-    }
-    .footer p { margin-bottom: 12px; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>마포 마사지 정보 | 찢어버리는 조건 010-6279-0862</title>
+  <meta name="description" content="마포에서 가장 미친 마사지 정보. 가격, 시간, 위치 싹 다 공개. 형님들 여기로 오쇼. 010-6279-0862 지금 전화하쇼.">
+  <meta name="keywords" content="마포 마사지 정보, 마포 마사지 가격, 마포 마사지 위치, 마포 스웨디시, 마포 건마, 마사지 조건">
+  <meta name="bpaas-design-system" content="brutalist-avantgarde">
+  <meta name="bpaas-design-theme" content="kr-acid-yellow">
+  <link rel="canonical" href="https://t3b06-mp-massage-evt.vercel.app/info">
+  <!-- OG + Twitter Card -->
+  <meta property="og:title" content="마포 마사지 정보 | 제대로 알고 찢자 010-6279-0862">
+  <meta property="og:description" content="마포에서 가장 핫한 마사지 정보 다 모았다. 가격, 시간, 위치 싹 다 공개. 010-6279-0862 지금 전화하쇼.">
+  <meta property="og:url" content="https://t3b06-mp-massage-evt.vercel.app/info">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="마포 마사지 정보 | 제대로 알고 찢자 010-6279-0862">
+  <meta name="twitter:description" content="마포에서 가장 핫한 마사지 정보 다 모았다. 가격, 시간, 위치 싹 다 공개. 010-6279-0862 지금 전화하쇼.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo">마포 BRO RUBY RED</a>
-      <nav class="nav">
-        <a href="index.html">홈</a>
-        <a href="about.html">상세정보</a>
-        <a href="blog.html">추천칼럼</a>
+    <div class="container header-inner">
+      <a href="https://t3b06-mp-massage-evt.vercel.app/" class="logo">마포 마사지</a>
+      <button class="hamburger-menu" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" role="navigation">
+        <ul>
+          <li><a href="https://t3b06-mp-massage-evt.vercel.app/">홈</a></li>
+          <li><a href="https://t3b06-mp-massage-evt.vercel.app/info" class="active">정보</a></li>
+          <li><a href="https://t3b06-mp-massage-evt.vercel.app/event">이벤트</a></li>
+          <li><a href="https://t3b06-mp-massage-evt.vercel.app/review">후기</a></li>
+          <li><a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="main">
-    <section class="card-box">
-      <h2 class="section-title">마포의 밤거리를 데이터마이닝하기까지</h2>
-      <p>
-        형들 안녕? 우리는 단순한 마사지 중개나 호객꾼이 아냐. 오직 정확하게 계산된 '정찰 시세'와 내상 없는 청정구역 수호를 신봉하는 테크니컬 분석 크루야.
-      </p>
-      <p>
-        마포역과 공덕역을 아우르는 교통 요충지 마포. 이곳의 화려한 오피스 가 뒤편에는 역설적이게도 온갖 어설픈 광고쟁이들이 도배하는 허위 정보와 꼼수 추가금 마케팅이 판치고 있어. 우리는 이 엉망진창인 로컬 마사지 시장의 현실을 마주하고, 프롬소프트웨어의 최고 걸작 '엘든링'의 더미 소스코드를 뜯어 보스들의 히든 저항 계수를 마이닝하던 그 치밀함과 집착을 이 동네에 그대로 쏟아부었지.
-      </p>
-      <p>
-        마포역 사거리 전체를 이르는 로컬 인프라의 진짜배기 가격선과 매장 서비스 위생 정비 상태를 마치 소스코드 한 줄 한 줄 디버깅(Debugging)하듯 정량적으로 분석하고 점수를 매겼어. 그 결과 형들의 소중한 금요일, 토요일 밤을 단 1원의 눈탱이도 맞지 않게 보조하는 '마포 철벽 안시세 팩트북'이 탄생한 거지.
-      </p>
-      <p>
-        감언이설로 무장한 사기 마케팅의 가스라이팅을 당해 멘붕에 빠지는 일이 없도록, 📞 <strong><a href="tel:010-6279-0862" style="color:var(--accent);">010-6279-0862</a></strong> 팩트 핫라인을 통해 100% 투명하고 정직한 조율 및 신속 진입을 서포트해 줄게. 우리는 언제나 형들의 유쾌하고 안전한 밤거리를 응원해!
-      </p>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>마포에서 가장 미친 마사지 정보</h1>
+        <p class="hero-sub">형님들, 정보 좀 드립쇼. 가격, 시간, 위치 다 까발림. 010-6279-0862 지금 전화하쇼.</p>
+        <a href="tel:010-6279-0862" class="cta-button tel-link">010-6279-0862 전화하쇼</a>
+      </div>
     </section>
 
-    <section class="card-box">
-      <h2 class="section-title">마포 루비 RED 분석 크루</h2>
-      <p>
-        우리는 정보의 완전한 공개와 가성비의 무결성을 검증하기 위해 모인 로컬 분석팀이야.
-      </p>
-      <div class="team-grid">
-        <div class="team-member">
-          <h4>⚔️ 크롤러 대장 bro</h4>
-          <p>전직 서버 아키텍트. 마포 구역의 실시간 업소 가격 테이블 데이터를 추출하고 보증 픽스 라인을 담당함.</p>
+    <section class="content-section">
+      <div class="container">
+        <h2>이건 기본이니까 알아두쇼</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>운영 시간</h3>
+            <p>매일 10:00 ~ 24:00 (연중무휴, 형님들 편할 때 오쇼)</p>
+          </div>
+          <div class="card">
+            <h3>가격 정책</h3>
+            <p>기본 60분 7만원 / 90분 10만원<br>형님들한테는 특별 할인 적용. 전화 주문하쇼.</p>
+          </div>
+          <div class="card">
+            <h3>위치</h3>
+            <p>마포구 홍대입구역 5번 출구에서 도보 3분<br>네비 검색: '마포 마사지 이벤트'</p>
+          </div>
+          <div class="card">
+            <h3>주의사항</h3>
+            <p>예약 필수 / 무단 노쇼 시 블랙 / 음주 후 방문 자제</p>
+          </div>
         </div>
-        <div class="team-member">
-          <h4>🧪 서비스 검증러</h4>
-          <p>시스템 품질 관리(QA) 출신. 매장 컨디션, 주류 정품 무결성 상태, 직원 위생 상태를 철저히 검사하여 필터링함.</p>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <h2>형님들이 제일 많이 묻는 거</h2>
+        <div class="faq">
+          <div class="faq-item">
+            <h3>예약은 어떻게 하나요?</h3>
+            <p>전화 010-6279-0862로 바로 걸어주쇼. 문자는 느리니 전화가 킹왕짱.</p>
+          </div>
+          <div class="faq-item">
+            <h3>현장 결제 되나요?</h3>
+            <p>네, 현장 결제 가능. 카드, 현금, 계좌이체 다 받습니다.</p>
+          </div>
+          <div class="faq-item">
+            <h3>여자 손님도 되나요?</h3>
+            <p>당연하쇼. 성별 상관없이 다 환영. 형님, 누나, 동생 할 거 없이 다 받습니다.</p>
+          </div>
+          <div class="faq-item">
+            <h3>이벤트 중복 할인 되나요?</h3>
+            <p>중복 할인은 안 됩니다. 가장 유리한 조건으로 적용해 드리니 전화 주문하쇼.</p>
+          </div>
         </div>
-        <div class="team-member">
-          <h4>📞 실시간 가용 가이드</h4>
-          <p>마포 대기 상황과 직통 예약 루트를 총괄. 형들이 추운 길거리에서 삐끼한테 호구 잡히지 않도록 실시간 가이드.</p>
+        <div class="cta-block">
+          <p>더 궁금한 거 있으면 전화로 물어보쇼. 친절하게 알려줍니다.</p>
+          <a href="tel:010-6279-0862" class="cta-button tel-link">010-6279-0862 지금 전화하쇼</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section">
+      <div class="container">
+        <h2>마포 마사지, 왜 미친 건지 알려드림</h2>
+        <div class="content-block">
+          <p>형님들, 마포에 마사지 업소는 많습니다. 근데 여기는 다릅니다. 가격은 찢었고, 퀄리티는 하늘을 찔렀습니다. 마사지사 분들도 다 전문 자격증 소지자고, 손맛 하나는 끝내줍니다. 홍대입구역 바로 앞이라 찾기도 쉽고, 넓은 주차장도 있습니다. 형님들, 고민하지 말고 전화 주문하쇼. 지금 당장 등짝이 시원해집니다.</p>
+          <p>특히 직장인 형님들, 오피스에서 쌓인 피로를 이곳에서 싹 풀어가쇼. 스웨디시, 건마, 아로마 다 구비되어 있습니다. 시간도 형님 스케줄에 맞춰 드리니 전화로 상담 주문하쇼. 010-6279-0862. 형님들 놀러 오세요.</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p><strong>마포 마사지 정찰제 정보 포털</strong></p>
-    <p>실시간 문의 및 팩트 예약: 📞 <a href="tel:010-6279-0862" style="color:var(--accent); font-weight:bold;">010-6279-0862</a></p>
-    <p style="font-size:0.8rem; opacity:0.5; margin-top:20px;">&copy; 2026 마포 BRO. All Rights Reserved.</p>
+    <div class="container footer-inner">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="https://t3b06-mp-massage-evt.vercel.app/">홈</a></li>
+          <li><a href="https://t3b06-mp-massage-evt.vercel.app/info">정보</a></li>
+          <li><a href="https://t3b06-mp-massage-evt.vercel.app/event">이벤트</a></li>
+          <li><a href="https://t3b06-mp-massage-evt.vercel.app/review">후기</a></li>
+          <li><a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">© 2025 마포 마사지 이벤트. 형님들을 위해 준비했습니다.</p>
+    </div>
   </footer>
 
+  <script>
+    // hamburger menu toggle (반응형 768px)
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburger = document.querySelector('.hamburger-menu');
+      const nav = document.querySelector('.nav');
+      if (hamburger && nav) {
+        hamburger.addEventListener('click', function() {
+          nav.classList.toggle('active');
+          hamburger.classList.toggle('active');
+        });
+      }
+    });
+  </script>
 </body>
 </html>
